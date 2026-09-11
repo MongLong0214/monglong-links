@@ -3,65 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MongLong Studio - Shop Psychedelic Art</title>
+<title>MongLong Studio</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
-  .avatar { width: 100px; height: 100px; border-radius: 50%; border: 3px solid #a855f7; margin-bottom: 16px; object-fit: cover; background: linear-gradient(135deg, #a855f7, #ec4899); }
-  h1 { font-size: 24px; margin-bottom: 4px; }
-  .bio { color: #999; font-size: 14px; margin-bottom: 32px; text-align: center; max-width: 300px; }
-  .links { width: 100%; max-width: 400px; display: flex; flex-direction: column; gap: 12px; }
-  .link { display: flex; align-items: center; padding: 16px 20px; border-radius: 12px; text-decoration: none; color: #fff; font-weight: 600; font-size: 15px; transition: transform 0.15s, box-shadow 0.15s; }
-  .link:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(168,85,247,0.3); }
-  .link .icon { width: 28px; height: 28px; margin-right: 14px; font-size: 22px; text-align: center; }
-  .link .price { margin-left: auto; font-size: 13px; opacity: 0.7; }
-  .rb { background: linear-gradient(135deg, #e53935, #d81b60); }
-  .dp { background: linear-gradient(135deg, #1a237e, #283593); }
-  .tp { background: linear-gradient(135deg, #2e7d32, #43a047); }
-  .kf { background: linear-gradient(135deg, #ff5252, #ff1744); }
-  .gm { background: linear-gradient(135deg, #000, #333); border: 1px solid #444; }
-  .ig { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
-  .section { color: #666; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin: 20px 0 8px; width: 100%; max-width: 400px; }
-  footer { margin-top: 40px; color: #444; font-size: 12px; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:40px 20px}
+.avatar{width:100px;height:100px;border-radius:50%;border:3px solid #a855f7;margin-bottom:16px;object-fit:cover}
+h1{font-size:24px;margin-bottom:4px}
+.bio{color:#999;font-size:14px;margin-bottom:32px;text-align:center;max-width:300px;line-height:1.6;white-space:pre-line}
+.links{width:100%;max-width:400px;display:flex;flex-direction:column;gap:12px}
+.link{display:flex;align-items:center;padding:16px 20px;border-radius:12px;text-decoration:none;color:#fff;font-weight:600;font-size:15px;transition:transform .15s,box-shadow .15s}
+.link:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(168,85,247,.3)}
+.icon{width:28px;margin-right:14px;font-size:22px;text-align:center}
+.price{margin-left:auto;font-size:13px;opacity:.7}
+.rb{background:linear-gradient(135deg,#e53935,#d81b60)}
+.dp{background:linear-gradient(135deg,#1a237e,#283593)}
+.tp{background:linear-gradient(135deg,#2e7d32,#43a047)}
+.kf{background:linear-gradient(135deg,#ff5252,#ff1744)}
+.gm{background:linear-gradient(135deg,#000,#333);border:1px solid #444}
+.ig{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)}
+.section{color:#666;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:20px 0 8px;width:100%;max-width:400px}
+footer{margin-top:40px;color:#444;font-size:12px}
 </style>
 </head>
 <body>
-  <div class="avatar"></div>
-  <h1>MongLong Studio</h1>
-  <p class="bio">Surrealism & psychedelic art. Buddhas, third eyes, mushrooms, melting cosmos.</p>
-  
-  <div class="section">Shop My Art</div>
-  <div class="links">
-    <a href="https://www.redbubble.com/people/MongLongStudio/shop" class="link rb" target="_blank">
-      <span class="icon">🎨</span> Redbubble - Prints, Tees, Stickers
-      <span class="price">From $3</span>
-    </a>
-    <a href="https://displate.com/artist/MongLongStudio" class="link dp" target="_blank">
-      <span class="icon">🖼️</span> Displate - Metal Posters
-      <span class="price">From $48</span>
-    </a>
-    <a href="https://www.teepublic.com/user/MongLongArt" class="link tp" target="_blank">
-      <span class="icon">👕</span> TeePublic - Apparel & More
-      <span class="price">From $16</span>
-    </a>
-    <a href="https://ko-fi.com/monglongs/shop" class="link kf" target="_blank">
-      <span class="icon">☕</span> Ko-fi - Digital Art Packs
-      <span class="price">From $8</span>
-    </a>
-    <a href="https://weplay0628.gumroad.com" class="link gm" target="_blank">
-      <span class="icon">📦</span> Gumroad - Wallpaper Packs
-      <span class="price">From $9</span>
-    </a>
-  </div>
-
-  <div class="section">Follow</div>
-  <div class="links">
-    <a href="https://www.instagram.com/monglongs" class="link ig" target="_blank">
-      <span class="icon">📸</span> Instagram @monglongs
-      <span class="price">6.7K</span>
-    </a>
-  </div>
-
-  <footer>MongLong Studio &copy; 2026</footer>
+<img class="avatar" src="avatar.jpg" alt="MongLong Studio">
+<h1>MongLong Studio</h1>
+<p class="bio">Time is fake
+We are all connected
+Ego is optional
+Just spread love and drink water</p>
+<div class="section">Shop My Art</div>
+<div class="links">
+<a href="https://www.redbubble.com/people/MongLongStudio/shop" class="link rb" target="_blank"><span class="icon">🎨</span>Redbubble - Prints & Stickers<span class="price">From $3</span></a>
+<a href="https://displate.com/artist/MongLongStudio" class="link dp" target="_blank"><span class="icon">🖼️</span>Displate - Metal Posters<span class="price">From $48</span></a>
+<a href="https://www.teepublic.com/user/MongLongArt" class="link tp" target="_blank"><span class="icon">👕</span>TeePublic - Apparel & More<span class="price">From $16</span></a>
+<a href="https://ko-fi.com/monglongs/shop" class="link kf" target="_blank"><span class="icon">☕</span>Ko-fi - Digital Art Packs<span class="price">From $8</span></a>
+<a href="https://weplay0628.gumroad.com" class="link gm" target="_blank"><span class="icon">📦</span>Gumroad - Wallpaper Packs<span class="price">From $9</span></a>
+</div>
+<div class="section">Follow</div>
+<div class="links">
+<a href="https://www.instagram.com/monglongs" class="link ig" target="_blank"><span class="icon">📸</span>Instagram @monglongs<span class="price">6.7K</span></a>
+</div>
+<footer>MongLong Studio © 2026</footer>
 </body>
 </html>
